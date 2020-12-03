@@ -10,5 +10,11 @@
     <figure class="portaretrato">
       <img class="foto" src="https://placeimg.com/800/600/any" alt="foto" />
     </figure>
+    <script>
+        const foto = document.querySelector(".foto")
+        foto.addEventListener("click", function (event) {
+            foto.src = "https://placeimg.com/800/600/any?" + Date.now()
+        })
+    </script>
   </body>
 </html>
